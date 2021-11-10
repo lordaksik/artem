@@ -117,7 +117,7 @@ bot.hears('/bot', async (ctx) => {
         result14 = result14 + 1;
     }
     if (result3 == 0 && result12 == 0 && result13 == 0 && result14 == 0) { ctx.reply('Не было ничьи 120 минут'); }
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 15; i++) {
         score_dealer = data.items.results[i].results.card_dealer.suit
         score_player = data.items.results[i].results.card_player.suit
         
@@ -126,23 +126,23 @@ bot.hears('/bot', async (ctx) => {
    
     }
     
-    if(mast1==30)
-    {ctx.reply('Буби не было 6 раздач')}
+    if(mast1==15)
+    {ctx.reply('Буби не было 30 раздач')}
     //diamonds- буби
     //clubs - крести
     //spades - пики
     //hearts - чирва
     //
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 15; i++) {
        score_dealer = data.items.results[i].results.card_dealer.suit
        score_player = data.items.results[i].results.card_player.suit
        if(score_dealer!='clubs' && score_player!='clubs')
        mast2=mast2+1;
    
    }
-   if(mast2==30)
+   if(mast2==15)
    {ctx.reply('Крести не было 30 раздач')}
-   for (let i = 0; i < 30; i++) {
+   for (let i = 0; i < 15; i++) {
        score_dealer = data.items.results[i].results.card_dealer.suit
        score_player = data.items.results[i].results.card_player.suit
        if(score_dealer!='spades' && score_player!='spades')
@@ -150,9 +150,9 @@ bot.hears('/bot', async (ctx) => {
    
    }
    
-   if(mast3==30)
-   {ctx.reply('Пики не было 6 раздач')}
-   for (let i = 0; i < 30; i++) {
+   if(mast3==15)
+   {ctx.reply('Пики не было 30 раздач')}
+   for (let i = 0; i < 15; i++) {
        score_dealer = data.items.results[i].results.card_dealer.suit
        score_player = data.items.results[i].results.card_player.suit
    
@@ -161,7 +161,7 @@ bot.hears('/bot', async (ctx) => {
    
    }
    
-   if(mast4==30)
+   if(mast4==15)
    {ctx.reply('Чирвы не было 30 раздач')}
   }
 
