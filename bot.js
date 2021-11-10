@@ -23,6 +23,10 @@ bot.hears('/bot', async (ctx) => {
     let result3 = 0;
     let result4 = 0;
     let result5 = 0;
+    mast1=0;
+      mast2=0;
+      mast3=0;
+      mast4=0;
     score_dealer = data.items.results[0].results.score_dealer
 
     for (let i = 0; i <= 29; i++) {
