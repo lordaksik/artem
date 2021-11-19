@@ -81,7 +81,7 @@ bot.hears('/bot', async (ctx) => {
     for (let i = 0; i <= 29; i++) {
       score_dealer2 = data2.items.results[i].results.score_dealer
       score_player2 = data2.items.results[i].results.score_player
-      if (score_player2 == 8)
+      if (score_dealer2 == 8)
         result55 = result55 + 1;
     }
 
