@@ -29,7 +29,7 @@ bot.hears('/bot', async (ctx) => {
       mast4=0;
     score_dealer = data.items.results[0].results.score_dealer
 
-    for (let i = 0; i <= 19; i++) {
+    for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
       // console.log("игрок " + score_player + " "+ score_dealer +" дилер")
@@ -39,7 +39,7 @@ bot.hears('/bot', async (ctx) => {
         result = result + 1;
     }
     console.log(result);
-    if (result == 0) { ctx.reply('Больших кэфов давно не было 20 минут'); }
+    if (result == 0) { ctx.reply('Больших кэфов давно не было 30 минут'); }
 
     for (let i = 0; i <= 30; i++) {
       score_dealer = data.items.results[i].results.score_dealer
