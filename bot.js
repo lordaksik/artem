@@ -29,7 +29,7 @@ bot.hears('/bot', async (ctx) => {
       mast4=0;
     score_dealer = data.items.results[0].results.score_dealer
 
-    for (let i = 0; i <= 29; i++) {
+    for (let i = 0; i <= 15; i++) {
       score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
       // console.log("игрок " + score_player + " "+ score_dealer +" дилер")
@@ -70,7 +70,7 @@ bot.hears('/bot', async (ctx) => {
       if (score_player2 == 8)
         result44 = result44 + 1;
     }
-    if (result4 === 0 && result44 === 0) { ctx.reply('Не было 8 у игрока уже 60 минут (вертикаль)'); }
+    if (result4 === 0) { ctx.reply('Не было 8 у игрока уже 30 минут (вертикаль)'); }
     for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
@@ -85,7 +85,7 @@ bot.hears('/bot', async (ctx) => {
         result55 = result55 + 1;
     }
 
-    if (result5 === 0 && result55===0) { ctx.reply('Не было 8 у дилера уже 60 минут (вертикаль)'); }
+    if (result5 === 0) { ctx.reply('Не было 8 у дилера уже 30 минут (вертикаль)'); }
     for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
@@ -116,7 +116,7 @@ bot.hears('/bot', async (ctx) => {
       if (score_player4 == score_dealer4)
         result14 = result14 + 1;
     }
-    if (result3 == 0 && result12 == 0 && result13 == 0 && result14 == 0) { ctx.reply('Не было ничьи 120 минут'); }
+    if (result3 == 0 && result12 == 0 ) { ctx.reply('Не было ничьи 60 минут'); }
   for (let i = 0; i < 10; i++) {
         score_dealer = data.items.results[i].results.card_dealer.suit
         score_player = data.items.results[i].results.card_player.suit
